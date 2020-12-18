@@ -1,0 +1,41 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: yellow;
+}
+
+label {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+}
+
+h1 {
+  margin-left: 0.25rem;
+}
+
+h2 {
+  margin-left: 0.25rem;
+  margin-top: 1rem;
+}
+
+.bild {
+  background-image: url("persona4.jpg");
+  height: 11rem;
+  background-repeat: no-repeat;
+}
+
+.invisible {
+  display: none;
+}
+
+button {
+  background-color: black;
+  color: whitesmoke;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}

@@ -3,21 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Persona 4 Quiz</title>
+    <title>Persona 4 Golden Quiz</title>
     <link rel="stylesheet" href="style.css">
     <script src="quiz.js" defer></script>
 </head>
 <body>
-    <header>Perosna 4 Quiz</header>
-    <div>Ditt senaste försök:</div>
+    <header><h1>Perosna 4 Golden Quiz</h1></header>
+    <div class="bild"></div>
+    <div>Ditt senaste försök: <span class="försök">0</span> av 6</div>
     <main>
-        <div class="questions">
-            <h2>Vad heter din första persona?</h2>
-            <label><input name="question1" type="radio" value="0" />Orpheus</label>
-            <label><input name="question1" type="radio" value="0" />Arsène</label>
-            <label><input name="question1" type="radio" value="1" />Izanagi</label>
-            <label><input name="question1" type="radio" value="0" />Magatsu-Izanagi</label>
-        </div>
+        <form class="quiz">
+            <div class="questions">
+                <h2>Vad heter din första persona?</h2>
+                <label><input name="question1" type="radio" value="0" />Orpheus</label>
+                <label><input name="question1" type="radio" value="0" />Arsène</label>
+                <label><input name="question1" type="radio" value="1" />Izanagi</label>
+                <label><input name="question1" type="radio" value="0" />Take-Mikazuchi</label>
+            </div>
+    
+            <div class="questions">
+                <h2>Vilket "element" använder Chie?</h2>
+                <label><input name="question2" type="radio" value="0" />Agi</label>
+                <label><input name="question2" type="radio" value="1" />Bufu</label>
+                <label><input name="question2" type="radio" value="0" />Garu</label>
+                <label><input name="question2" type="radio" value="0" />Zio</label>
+            </div>
+    
+            <div class="questions">
+                <h2>Vad heter byn/staden persona 4 utspelar sig i?</h2>
+                <label><input name="question3" type="radio" value="0" />Yasogami</label>
+                <label><input name="question3" type="radio" value="0" />Okina</label>
+                <label><input name="question3" type="radio" value="1" />Inaba</label>
+                <label><input name="question3" type="radio" value="0" />Ina</label>
+            </div>
+    
+            <div class="questions">
+                <h2>Vad är Chie's midnight channel dungeon?</h2>
+                <label><input name="question4" type="radio" value="0" />Ett slott</label>
+                <label><input name="question4" type="radio" value="0" />En klubb</label>
+                <label><input name="question4" type="radio" value="0" />En dojo</label>
+                <label><input name="question4" type="radio" value="1" />Hon har ingen</label>
+            </div>
+    
+            <div class="questions">
+                <h2>Vem/vilka faller in i tv:en med dig för första gången i Junes?</h2>
+                <label><input name="question5" type="radio" value="0" />Teddy</label>
+                <label><input name="question5" type="radio" value="0" />Yosuke och Chie</label>
+                <label><input name="question5" type="radio" value="1" />Yosuke</label>
+                <label><input name="question5" type="radio" value="0" />Chie</label>
+            </div>
+    
+            <div class="questions">
+                <h2>Vad heter den sista bossen i persona 4? (inte golden)</h2>
+                <label><input name="question6" type="radio" value="1" />Tohru Adachi</label>
+                <label><input name="question6" type="radio" value="1" />Ameno-sagiri</label>
+                <label><input name="question6" type="radio" value="0" />Taro Namatame</label>
+                <label><input name="question6" type="radio" value="0" />Demiurg</label>
+            </div>
+            <button type="button" onclick="Rätta()">Rätta</button>
+        </form>
+
+        <div class="svar invisible">
+            <h2>Du fick <span class="rätta-svar">0</span> rätta svar av 6</h2>
+            <button type="button" onclick="KörOm()">Kör igen</button>
+          </div>
+
     </main>
 </body>
 </html>
